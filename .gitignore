@@ -1,6 +1,11 @@
+# Temporary files
 *.log
 *.tmp
 __pycache__/
 *.pyc
 *.zip
+
+# Ignore heavy APKs (>50MB), but keep Kaiser Link and Thermometer binaries
 *.apk
+!modules/kaiser-link/*.apk
+!modules/thermometer/*.apk

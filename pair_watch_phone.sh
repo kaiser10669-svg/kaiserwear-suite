@@ -1,27 +1,29 @@
 #!/system/bin/sh
 # ==============================================================================
-#  Скрипт переноса Xiaomi Watch 5 на Vivo X300 Ultra (OriginOS)
-#  Автор метода: Kaiser Dev
-#  Запускается через Bugjaeger / Termux прямо на смартфоне
+#  👑 KaiserWear Suite — Universal Wear OS Pairing Script for Android
+#  Автор: Kaiser Dev
+#  Запускается прямо на смартфоне через Bugjaeger / Termux / LADB
 # ==============================================================================
 
 echo "=================================================================="
-echo " 1. Активация режима переноса Xiaomi Watch 5 на Vivo X300 Ultra   "
+echo " 👑 KaiserWear Suite: Перенос Wear OS на новый смартфон (Без сброса) "
 echo "=================================================================="
+echo ""
+echo "Поддержка: Xiaomi Watch, Samsung Galaxy Watch, Pixel Watch, OnePlus"
+echo ""
 
 # Будим экран часов
 input keyevent 224
 svc power stayon true
 
-# Запускаем системный мастер Wear OS Transfer
+# Запуск универсального мастера переноса Wear OS
 am start -a android.settings.WATCH_TRANSFER
 
-echo ""
 echo "[ИНСТРУКЦИЯ НА ЭКРАНАХ]:"
 echo "1. На часах нажмите зеленую галочку [✓] (Подтвердить перенос)."
-echo "2. На смартфоне Vivo подтвердите запрос сопряжения Bluetooth."
+echo "2. На смартфоне подтвердите запрос сопряжения Bluetooth."
 echo ""
-echo "Когда на часах появится экран «Продолжите на телефоне», выполните в Bugjaeger:"
+echo "Когда на часах появится экран «Продолжите на телефоне», выполните в консоли:"
 echo "------------------------------------------------------------------"
 echo "settings put secure user_setup_complete 1"
 echo "am start -a android.intent.action.MAIN -c android.intent.category.HOME"
