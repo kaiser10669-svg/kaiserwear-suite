@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>👑 KaiserWear Suite — Universal Wear OS Toolkit & Companion</title>
-  <meta name="description" content="Универсальный программный комплекс для сопряжения любых часов Wear OS с OriginOS, ColorOS, HyperOS без сброса настроек. Автор Kaiser Dev.">
+  <title>👑 KaiserWear — Подключение Xiaomi Watch 5 к Vivo X300 Ultra (OriginOS)</title>
+  <meta name="description" content="Официальный программный комплекс и пошаговое руководство от Kaiser Dev: перенос и сопряжение Xiaomi Watch 5 (Wear OS) с Vivo X300 Ultra (OriginOS) без сброса настроек.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -96,7 +96,7 @@
     }
 
     .hero {
-      padding: 60px 0 40px;
+      padding: 60px 0 30px;
       text-align: center;
     }
     .pill-hero {
@@ -113,9 +113,9 @@
       margin-bottom: 20px;
     }
     .hero h1 {
-      font-size: 44px;
+      font-size: 40px;
       font-weight: 800;
-      line-height: 1.2;
+      line-height: 1.25;
       margin-bottom: 16px;
       background: linear-gradient(180deg, #FFFFFF 30%, #ffd700 100%);
       -webkit-background-clip: text;
@@ -128,7 +128,6 @@
       margin: 0 auto 30px;
     }
 
-    /* Badges list */
     .devices-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -153,7 +152,7 @@
     }
 
     section {
-      padding: 30px 0;
+      padding: 20px 0;
     }
     .card {
       background: var(--card-bg);
@@ -170,7 +169,7 @@
     }
 
     h2 {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
       margin-bottom: 16px;
       display: flex;
@@ -179,7 +178,7 @@
       color: #fff;
     }
     h3 {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       margin: 20px 0 10px;
       color: var(--accent-gold);
@@ -250,6 +249,18 @@
       color: #000;
     }
 
+    .step-badge {
+      display: inline-block;
+      background: var(--accent-gold);
+      color: #000;
+      font-weight: 800;
+      font-size: 12px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
     .tab-container {
       display: flex;
       gap: 10px;
@@ -280,6 +291,30 @@
       display: block;
     }
 
+    .file-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    .file-table th, .file-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 14px;
+    }
+    .file-table th {
+      color: var(--accent-gold);
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .file-table code {
+      color: var(--accent-cyan);
+      background: rgba(0, 240, 255, 0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
     footer {
       border-top: 1px solid rgba(255, 255, 255, 0.08);
       padding: 40px 0;
@@ -294,12 +329,12 @@
   <header>
     <div class="container nav-wrapper">
       <a href="#" class="logo">
-        <span>👑 KaiserWear Suite</span>
-        <span class="crown-badge">Universal Toolkit</span>
+        <span>👑 KaiserWear</span>
+        <span class="crown-badge">OriginOS Edition</span>
       </a>
       <div>
-        <a href="https://github.com/kaiser10669-svg" target="_blank" class="btn-action">
-          GitHub профиль
+        <a href="https://github.com/kaiser10669-svg/kaiserwear-suite" target="_blank" class="btn-action">
+          Репозиторий на GitHub
         </a>
       </div>
     </div>
@@ -309,46 +344,110 @@
 
     <div class="hero">
       <div class="pill-hero">
-        <span>👑 Universal Wear OS Software Suite by Kaiser Dev</span>
+        <span>👑 Zero-Reset Pairing Method by Kaiser Dev</span>
       </div>
-      <h1>Универсальный программный комплекс KaiserWear</h1>
+      <h1>Подключение Xiaomi Watch 5<br>к Vivo X300 Ultra (OriginOS)</h1>
       <p>
-        Полный набор утилит и модулей для сопряжения, разблокировки функций и беспроводного моста <b>любых часов на Google Wear OS</b> с китайскими смартфонами на <b>OriginOS, ColorOS, HyperOS (CN)</b> без сброса к заводским настройкам (Zero-Reset Pairing).
+        Официальный программный пакет автоматизации и полное пошаговое руководство по переносу часов <b>Google Wear OS</b> на смартфоны <b>Vivo OriginOS (Android 15–16)</b> без сброса настроек часов и без root-прав.
       </p>
     </div>
 
-    <!-- Список поддерживаемых устройств -->
+    <!-- Список совместимости -->
     <div class="devices-grid">
       <div class="device-card">
-        <h4>Xiaomi Watch</h4>
-        <p>Xiaomi Watch 5, Watch 2, Watch 2 Pro (Wear OS 3.5 — 5 / Android 16)</p>
+        <h4>Целевые смартфоны</h4>
+        <p>Vivo X300 Ultra, X200 / X100 серии, iQOO 12/13 (OriginOS 4 / 5, Android 15-16)</p>
       </div>
       <div class="device-card">
-        <h4>Samsung Galaxy Watch</h4>
-        <p>Galaxy Watch 4, 5, 6, 7, Ultra (One UI Watch / Wear OS 3.0 — 5.0)</p>
+        <h4>Поддерживаемые часы</h4>
+        <p>Xiaomi Watch 5, Watch 2, Watch 2 Pro, Samsung Galaxy Watch 4-7 / Ultra, Pixel Watch</p>
       </div>
       <div class="device-card">
-        <h4>Pixel Watch & OnePlus</h4>
-        <p>Google Pixel Watch 1/2/3, OnePlus Watch 2 / 2R, OPPO Watch X</p>
+        <h4>Безопасность данных</h4>
+        <p>100% Zero-Reset: все циферблаты, приложения, история и здоровье сохраняются</p>
       </div>
       <div class="device-card">
-        <h4>Смартфоны</h4>
-        <p>Vivo OriginOS, OPPO/OnePlus ColorOS CN, Xiaomi HyperOS CN, Huawei HarmonyOS</p>
+        <h4>Рабочие функции</h4>
+        <p>Входящие вызовы, Telegram/WhatsApp уведомления, биометрия, шаги и сон</p>
       </div>
     </div>
 
+    <!-- Причина проблемы -->
     <div class="card card-highlight">
-      <h2>🧠 Архитектура: Как работает Zero-Reset Pairing?</h2>
+      <h2>🧠 В чем причина блокировки через «+» в OriginOS?</h2>
       <p>
-        В китайских прошивках сервисы Google Play лишены модуля <code>Wearable.API</code>, поэтому сопряжение «с нуля» через «+» в приложениях вендоров не находит часы.
+        Часы <b>Xiaomi Watch 5</b> работают на операционной системе <b>Google Wear OS 5 (Android 16)</b>. При попытке штатного сопряжения с нуля через кнопку «+» официальный Mi Fitness обращается к сервису Google Play <code>Wearable.API</code>.
       </p>
       <div class="alert alert-important">
-        <b>Универсальное решение:</b> Мы переводим любые часы Wear OS в системный режим переноса без стирания памяти (<code>WATCH_TRANSFER</code>), спариваем Bluetooth, а затем снимаем зависший экран приветствия прямой командой финализации конфигурации <code>user_setup_complete 1</code>.
+        <b>Ограничение OriginOS:</b> В китайских версиях прошивок модуль <code>Wearable.API</code> на серверах Google заблокирован для CN-устройств. При сопряжении «с нуля» приложение выдает ошибку <code>ApiException: 17: Wearable.API is not available</code>.
       </div>
+      <p>
+        <b>Наше решение:</b> Однократная регистрация устройства в облаке Xiaomi Cloud за вашим личным аккаунтом + установка Mi Fitness MOD со снятым фильтром <code>filterWearOS</code> + мгновенный перенос радиоканала через системный интент <code>WATCH_TRANSFER</code> со снятием экрана ожидания.
+      </p>
     </div>
 
+    <!-- Состав пакета -->
     <div class="card">
-      <h2>⚡ Сопряжение часов за 3 минуты</h2>
+      <h2>📦 Состав репозитория и утилит</h2>
+      <table class="file-table">
+        <thead>
+          <tr>
+            <th>Файл / Инструмент</th>
+            <th>Описание и назначение</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>pair_watch_pc.bat</code></td>
+            <td>Автоматический скрипт переноса часов с ПК в один клик. Подключается по Wi-Fi ADB, инициирует сопряжение и автоматически обходит зависший экран.</td>
+          </tr>
+          <tr>
+            <td><code>pair_watch_phone.sh</code></td>
+            <td>Скрипт для выполнения сопряжения прямо со смартфона Vivo через Bugjaeger без участия компьютера.</td>
+          </tr>
+          <tr>
+            <td><code>install_phone_mod.bat</code></td>
+            <td>Пакетный установщик модифицированного Mi Fitness MOD со снятыми ограничениями на телефон.</td>
+          </tr>
+          <tr>
+            <td><code>tools/</code></td>
+            <td>Встроенный автономный ADB (все библиотеки и драйверы включены, ничего дополнительно ставить на ПК не требуется).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Пошаговое руководство -->
+    <div class="card">
+      <h2>🚀 Полный пошаговый алгоритм настройки</h2>
+
+      <h3><span class="step-badge">ШАГ 1</span> Облачная привязка часов (2 минуты)</h3>
+      <p>
+        Для того чтобы часы появились в вашем профиле, их необходимо один раз зарегистрировать в облаке Xiaomi:
+      </p>
+      <ul>
+        <li>Возьмите <b>любой глобальный телефон</b> (старый смартфон, телефон друга/родственника Xiaomi, Samsung, Pixel и т.д.).</li>
+        <li>Включите VPN на глобальном телефоне, откройте официальный Mi Fitness и войдите под своим <b>личным Mi-аккаунтом</b>.</li>
+        <li>Подключите часы штатным способом и проведите синхронизацию.</li>
+        <li><b>Часы навсегда закреплены за вашим аккаунтом!</b> Глобальный телефон больше не понадобится.</li>
+      </ul>
+
+      <h3><span class="step-badge">ШАГ 2</span> Установка Mi Fitness MOD на Vivo X300 Ultra</h3>
+      <ul>
+        <li>Включите на Vivo отладку: <i>Настройки → О телефоне → Сведения о ПО → 7 раз по «Номер сборки»</i>, затем в <i>Система → Для разработчиков → Отладка по USB</i>.</li>
+        <li>Подключите телефон кабелем к ПК и запустите <code>install_phone_mod.bat</code>.</li>
+        <li>Включите VPN на обоих телефонах, откройте Mi Fitness MOD на Vivo и войдите в свой Mi-аккаунт.</li>
+        <li>Перейдите во вкладку <b>«Устройство»</b>: часы <b>Xiaomi Watch 5 уже высветятся в списке</b> благодаря вырезанному фильтру <code>filterWearOS</code>.</li>
+      </ul>
+
+      <div class="alert alert-tip">
+        <b>Обязательная настройка фоновой работы в OriginOS:</b><br>
+        Зажмите иконку Mi Fitness → <i>«О приложении» → «Управление батареей» → «Высокое энергопотребление в фоне»</i>.<br>
+        Включите <i>«Автозапуск»</i> и <i>«Ассоциированный запуск»</i>.<br>
+        В меню недавних приложений закрепите карточку Mi Fitness <b>замочком 🔒</b>.
+      </div>
+
+      <h3><span class="step-badge">ШАГ 3</span> Перенос радиоканала на Vivo и сопряжение</h3>
       
       <div class="tab-container">
         <button class="tab-btn active" onclick="switchTab('pc')">💻 Вариант А: Через ПК (В один клик)</button>
@@ -358,26 +457,27 @@
       <div id="tab-pc" class="tab-content active">
         <ol>
           <li>Включите на часах: <i>Настройки → Для разработчиков → Отладка по Wi-Fi</i>.</li>
-          <li>Запустите скрипт <code>pair_watch_pc.bat</code> из папки комплекса и введите IP часов.</li>
-          <li>Подтвердите перенос на экране часов галочкой <b>[✓]</b> и сопряжение Bluetooth на смартфоне.</li>
-          <li>Когда на часах появится надпись <i>«Продолжите на телефоне»</i>, нажмите пробел в окне консоли ПК — скрипт сам отправит команды фикса.</li>
-          <li>На часах свайпом вниз нажмите <b>«Позже»</b>. Часы моментально выходят на циферблат!</li>
+          <li>Запустите файл <code>pair_watch_pc.bat</code> и укажите IP часов из настроек.</li>
+          <li>На часах подтвердите перенос зеленой галочкой <b>[✓]</b>.</li>
+          <li>На смартфоне Vivo в Mi Fitness или шторке подтвердите запрос сопряжения Bluetooth.</li>
+          <li>Когда на часах появится сообщение <i>«Продолжите на телефоне»</i>, <b>просто нажмите пробел в окне консоли на ПК</b>.</li>
+          <li>На часах <b>свайпом вниз пролистните экран и нажмите «Позже»</b>.</li>
         </ol>
       </div>
 
       <div id="tab-phone" class="tab-content">
         <ol>
-          <li>Установите на смартфон приложение <b>Bugjaeger</b>.</li>
-          <li>Включите на часах <b>«Отладку по Wi-Fi»</b>, подключитесь в Bugjaeger к IP часов.</li>
-          <li>Во вкладке Commands отправьте команду переноса:</li>
+          <li>Установите на Vivo бесплатное приложение <b>Bugjaeger</b>.</li>
+          <li>Включите на часах «Отладку по Wi-Fi» и подключитесь к часам в Bugjaeger.</li>
+          <li>Во вкладке Commands отправьте команду:</li>
         </ol>
         <div class="code-block">
           <code>am start -a android.settings.WATCH_TRANSFER</code>
           <button class="copy-btn" onclick="copyText('am start -a android.settings.WATCH_TRANSFER')">Скопировать</button>
         </div>
         <ol start="4">
-          <li>Подтвердите перенос на часах галочкой [✓] и сопряжение на телефоне.</li>
-          <li>Когда на часах появится экран <i>«Продолжите на телефоне»</i>, отправьте команды фикса:</li>
+          <li>Подтвердите перенос на экране часов галочкой [✓] и сопряжение Bluetooth на телефоне.</li>
+          <li>Когда часы покажут экран <i>«Продолжите на телефоне»</i>, выполните в Bugjaeger:</li>
         </ol>
         <div class="code-block">
           <code>settings put secure user_setup_complete 1
@@ -385,37 +485,34 @@ am start -a android.intent.action.MAIN -c android.intent.category.HOME</code>
           <button class="copy-btn" onclick="copyText('settings put secure user_setup_complete 1\nam start -a android.intent.action.MAIN -c android.intent.category.HOME')">Скопировать</button>
         </div>
         <ol start="6">
-          <li>На часах свайпом вниз нажмите <b>«Позже»</b> — готово!</li>
+          <li>Экран вернется в интерфейс часов. Свайпом вниз нажмите <b>«Позже»</b>.</li>
         </ol>
+      </div>
+
+      <div class="alert alert-important" style="margin-top: 24px;">
+        <b>🎉 Финал:</b> Часы мгновенно выходят на циферблат! Значок разъединения исчезает, звонки, уведомления приложений и синхронизация активности работают стабильно и без разрывов.
       </div>
     </div>
 
-    <!-- Модули -->
+    <!-- FAQ -->
     <div class="card">
-      <h2>📦 Фирменные модули комплекса</h2>
+      <h2>❓ Ответы на частые вопросы (FAQ)</h2>
+      <p><b>В: Сохраняется ли сопряжение после перезагрузки смартфона или часов?</b></p>
+      <p style="margin-bottom: 16px;">О: Да, сопряжение сохраняется на постоянной основе на аппаратном уровне Bluetooth LTK ключей. После рестарта связь восстанавливается автоматически.</p>
       
-      <h3>1. Kaiser Link: Беспроводной мост Wi-Fi (до 40 МБ/с)</h3>
-      <p>
-        Скоростная передача музыки (.mp3) и файлов на любые часы Wear OS по Wi-Fi. Вырезаны системные паразитные вибрации, передача целых альбомов занимает секунды.
-      </p>
+      <p><b>В: Работают ли входящие звонки и уведомления?</b></p>
+      <p style="margin-bottom: 16px;">О: Да, вызовы поступают с возможностью ответа прямо с часов, а также отображаются все уведомления из мессенджеров.</p>
 
-      <h3>2. Health & Sensor Unlocker</h3>
-      <p>
-        Модуль для Mi Fitness MOD v4, разблокирующий отображение часов на OriginOS (снят <code>filterWearOS</code>), графики ЭКГ высокого разрешения, детекцию мерцательной аритмии и давление.
-      </p>
-
-      <h3>3. WatchThermometer</h3>
-      <p>
-        Нативный виджет и осложнение для циферблата часов для чтения физических термодатчиков.
-      </p>
+      <p><b>В: Нужен ли root на телефоне или часах?</b></p>
+      <p>О: Нет, ни рут, ни разблокировка загрузчика не требуются. Все операции проводятся через штатный ADB Android.</p>
     </div>
 
   </div>
 
   <footer>
     <div class="container">
-      <p>Разработано с душой для сообщества 4PDA, XDA и владельцев любых часов Wear OS.</p>
-      <p style="margin-top: 8px;">Автор комплекса: <b>Kaiser Dev</b></p>
+      <p>👑 Комплект разработан Kaiser Dev специально для сообщества 4PDA и владельцев китайских флагманов Vivo.</p>
+      <p style="margin-top: 8px;">Репозиторий: <a href="https://github.com/kaiser10669-svg/kaiserwear-suite" style="color: var(--accent-gold); text-decoration: none;">kaiser10669-svg/kaiserwear-suite</a></p>
     </div>
   </footer>
 
