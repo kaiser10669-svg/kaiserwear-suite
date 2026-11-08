@@ -1,6 +1,7 @@
 # 👑 KaiserWear: Подключение Xiaomi Watch 5 к Vivo X300 Ultra (OriginOS)
 
 [![Author](https://img.shields.io/badge/Author-Kaiser_Dev-FFD700?style=for-the-badge&logo=crown)](https://github.com/kaiser10669-svg)
+[![Release](https://img.shields.io/badge/Download-Release_v1.0.0_(APK_Pack)-00F0FF?style=for-the-badge&logo=github)](https://github.com/kaiser10669-svg/kaiserwear-suite/releases/latest)
 [![Platform](https://img.shields.io/badge/Phone-Vivo_X300_Ultra_(OriginOS)-00E676?style=for-the-badge&logo=vivo)](https://github.com/kaiser10669-svg)
 [![Watch](https://img.shields.io/badge/Watch-Xiaomi_Watch_5_(Wear_OS)-FF6D00?style=for-the-badge&logo=xiaomi)](https://github.com/kaiser10669-svg)
 [![Status](https://img.shields.io/badge/Status-100%25_Verified-00F0FF?style=for-the-badge)](https://github.com/kaiser10669-svg)
@@ -9,6 +10,17 @@
 > [!NOTE]
 > **Официальный рабочий метод и софт от Kaiser Dev.**  
 > Полный комплект программ и пошаговое руководство для сопряжения умных часов **Xiaomi Watch 5** (Google Wear OS 5 / Android 16) с китайским флагманом **Vivo X300 Ultra** (OriginOS 5 / Android 15–16) **без сброса часов к заводским настройкам** и без рутирования.
+
+---
+
+## 📥 Быстрое скачивание (Releases)
+
+Все APK-файлы и готовый архив «всё-в-одном» доступны во вкладке [**Releases**](https://github.com/kaiser10669-svg/kaiserwear-suite/releases/latest):
+* **[Xiaomi_Watch5_Vivo_OriginOS_Pairing_Pack.zip](https://github.com/kaiser10669-svg/kaiserwear-suite/releases/latest)** *(готовый архив со всеми APK и скриптами)*
+* **`base.apk`**, **`split_config.arm64_v8a.apk`**, **`split_config.ru.apk`**, **`split_config.xxxhdpi.apk`** *(отдельные файлы APK)*
+
+> [!TIP]
+> При скачивании всего репозитория через кнопку **Code → Download ZIP** все APK уже включены внутри: архив `base.zip` автоматически распаковывается при первом запуске `install_phone_mod.bat`!
 
 ---
 
@@ -58,9 +70,13 @@ flowchart TD
 
 | Файл / Инструмент | Назначение |
 | :--- | :--- |
+| **`base.zip`** | Архив с основным пакетом Mi Fitness MOD v4 (снят фильтр `filterWearOS`, разблокированы ЭКГ, давление, аритмия). Распаковывается автоматически. |
+| **`split_config.arm64_v8a.apk`** | Конфигурационный сплит архитектуры ARM64-v8a. |
+| **`split_config.ru.apk`** | Конфигурационный сплит с русским языком. |
+| **`split_config.xxxhdpi.apk`** | Конфигурационный сплит графических ресурсов высокого разрешения. |
+| **`install_phone_mod.bat`** | Скрипт автоматической пакетной установки всех 4 сплитов на смартфон (с авто-распаковкой). |
 | **`pair_watch_pc.bat`** | Автоматизированный перенос сопряжения часов с ПК в один клик. Включает автоматическое снятие зависания «Продолжите на телефоне». |
 | **`pair_watch_phone.sh`** | Скрипт для сопряжения прямо со смартфона Vivo через приложение Bugjaeger или Termux. |
-| **`install_phone_mod.bat`** | Скрипт быстрой пакетной установки модифицированного Mi Fitness MOD на смартфон. |
 | **`tools/`** | Автономный портативный ADB (готовые драйверы и библиотеки, установка сторонних программ на ПК не требуется). |
 | **[`ИНСТРУКЦИЯ_ПО_ПОДКЛЮЧЕНИЮ.txt`](ИНСТРУКЦИЯ_ПО_ПОДКЛЮЧЕНИЮ.txt)** | Оффлайн текстовая инструкция для чтения и отправки в мессенджерах. |
 

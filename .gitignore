@@ -3,7 +3,13 @@
 *.tmp
 __pycache__/
 *.pyc
-*.zip
 
-# Ignore heavy APKs to protect against GitHub limit
+# Allow base.zip, ignore other zips
+*.zip
+!base.zip
+
+# Ignore uncompressed 142MB base.apk, but allow split APKs (<100MB)
 *.apk
+!split_config.arm64_v8a.apk
+!split_config.ru.apk
+!split_config.xxxhdpi.apk

@@ -1,0 +1,53 @@
+name: Publish GitHub Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract base.apk from base.zip
+        run: |
+          unzip base.zip
+          ls -lh base.apk
+
+      - name: Build Xiaomi_Watch5_Vivo_OriginOS_Pairing_Pack.zip
+        run: |
+          zip -r Xiaomi_Watch5_Vivo_OriginOS_Pairing_Pack.zip base.apk split_config.arm64_v8a.apk split_config.ru.apk split_config.xxxhdpi.apk pair_watch_pc.bat pair_watch_phone.sh install_phone_mod.bat tools/ ИНСТРУКЦИЯ_ПО_ПОДКЛЮЧЕНИЮ.txt 4PDA_POST.txt
+          ls -lh Xiaomi_Watch5_Vivo_OriginOS_Pairing_Pack.zip
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: KaiserWear Suite ${{ github.ref_name }} (Mi Fitness MOD APK + Pairing Tools)
+          body: |
+            ## 👑 KaiserWear Suite: Mi Fitness MOD v4 & Pairing Pack
+            
+            В этот релиз включены все оригинальные сплиты и модифицированные файлы APK для установки на Vivo OriginOS (CN) / Android 15–16:
+            
+            - **`base.apk`** — модифицированный основной пакет Mi Fitness v4 (снят фильтр `filterWearOS`, разблокированы графики ЭКГ, давление, аритмия, температура).
+            - **`split_config.arm64_v8a.apk`** — сплит архитектуры ARM64.
+            - **`split_config.ru.apk`** — русский язык интерфейса.
+            - **`split_config.xxxhdpi.apk`** — графические ресурсы высокого разрешения.
+            - **`Xiaomi_Watch5_Vivo_OriginOS_Pairing_Pack.zip`** — полный готовый архив «всё-в-одном» со скриптами в один клик и встроенным автономным ADB.
+            
+            ### 🚀 Установка:
+            1. Распакуйте архив и запустите `install_phone_mod.bat` (телефон должен быть подключен по USB с включенной отладкой).
+            2. Запустите `pair_watch_pc.bat` (или `pair_watch_phone.sh` с телефона) для привязки часов.
+          files: |
+            base.apk
+            split_config.arm64_v8a.apk
+            split_config.ru.apk
+            split_config.xxxhdpi.apk
+            Xiaomi_Watch5_Vivo_OriginOS_Pairing_Pack.zip
