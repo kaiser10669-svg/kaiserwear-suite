@@ -7,6 +7,7 @@
 
 echo "=================================================================="
 echo " 👑 KaiserWear Suite: Перенос Wear OS на новый смартфон (Без сброса) "
+echo " Автор: Kaiser Dev | Telegram: https://t.me/kaiStudi "
 echo "=================================================================="
 echo ""
 echo "Поддержка: Xiaomi Watch, Samsung Galaxy Watch, Pixel Watch, OnePlus"

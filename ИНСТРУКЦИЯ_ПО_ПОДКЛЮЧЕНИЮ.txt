@@ -3,6 +3,7 @@
 ================================================================================
 Автор комплекта: Kaiser Dev
 Тестирование и проверка в боевых условиях: VerbaMraz (100% подтверждено)
+Telegram-канал автора (обновления и поддержка): https://t.me/kaiStudi
 GitHub репозиторий: https://github.com/kaiser10669-svg/kaiserwear-suite
 Прямая ссылка на инструкцию (GitHub): https://github.com/kaiser10669-svg/kaiserwear-suite/blob/main/ИНСТРУКЦИЯ_ПО_ПОДКЛЮЧЕНИЮ.txt
 Интерактивный Web-гайд (с кнопками копирования): https://kaiser10669-svg.github.io/kaiserwear-suite/

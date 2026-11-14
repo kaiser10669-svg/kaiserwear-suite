@@ -2,7 +2,7 @@
 [size=4][b][color=#00F0FF]Подключение Xiaomi Watch 5 (Wear OS) к Vivo X300 Ultra / OriginOS[/color][/b][/size]
 [size=3][color=#00E676][b]БЕЗ сброса часов к заводским настройкам (Zero-Reset) • БЕЗ Root-прав • Звонки, уведомления и здоровье 100%[/b][/color][/size]
 [b]Автор сборки и метода:[/b] [color=#FFD700][b]Kaiser Dev[/b][/color] | [b]Тестирование и проверка:[/b] [color=#00F0FF][b]VerbaMraz[/b][/color] (успешно подтверждено на реальном устройстве!)
-[url=https://github.com/kaiser10669-svg/kaiserwear-suite][b]GitHub Репозиторий[/b][/url] | [url=https://kaiser10669-svg.github.io/kaiserwear-suite/][b]Web-версия гайда[/b][/url] | [url=https://github.com/kaiser10669-svg/kaiserwear-suite/blob/main/%D0%98%D0%9D%D0%A1%D0%A2%D0%A0%D0%A3%D0%9A%D0%A6%D0%98%D0%AF_%D0%9F%D0%9E_%D0%9F%D0%9E%D0%94%D0%9A%D0%9B%D0%AE%D0%A7%D0%95%D0%9D%D0%98%D0%AE.txt][b]Текстовый гайд (TXT)[/b][/url][/center]
+[url=https://github.com/kaiser10669-svg/kaiserwear-suite][b]GitHub Репозиторий[/b][/url] | [url=https://kaiser10669-svg.github.io/kaiserwear-suite/][b]Web-версия гайда[/b][/url] | [url=https://github.com/kaiser10669-svg/kaiserwear-suite/blob/main/%D0%98%D0%9D%D0%A1%D0%A2%D0%A0%D0%A3%D0%9A%D0%A6%D0%98%D0%AF_%D0%9F%D0%9E_%D0%9F%D0%9E%D0%94%D0%9A%D0%9B%D0%AE%D0%A7%D0%95%D0%9D%D0%98%D0%AE.txt][b]Текстовый гайд (TXT)[/b][/url] | [url=https://t.me/kaiStudi][b]Telegram-канал автора (@kaiStudi)[/b][/url][/center]
 
 [hr]
 
@@ -163,6 +163,7 @@ am start -a android.intent.action.MAIN -c android.intent.category.HOME[/code]
 [*] [b]Репозиторий проекта на GitHub:[/b] [url=https://github.com/kaiser10669-svg/kaiserwear-suite]https://github.com/kaiser10669-svg/kaiserwear-suite[/url]
 [*] [b]Текстовая инструкция (TXT на GitHub):[/b] [url=https://github.com/kaiser10669-svg/kaiserwear-suite/blob/main/%D0%98%D0%9D%D0%A1%D0%A2%D0%A0%D0%A3%D0%9A%D0%A6%D0%98%D0%AF_%D0%9F%D0%9E_%D0%9F%D0%9E%D0%94%D0%9A%D0%9B%D0%AE%D0%A7%D0%95%D0%9D%D0%98%D0%AE.txt]Открыть ИНСТРУКЦИЯ_ПО_ПОДКЛЮЧЕНИЮ.txt[/url]
 [*] [b]Интерактивный Web-гайд (с кнопками копирования команд):[/b] [url=https://kaiser10669-svg.github.io/kaiserwear-suite/]https://kaiser10669-svg.github.io/kaiserwear-suite/[/url]
+[*] [b]Официальный Telegram-канал (новости, моды и поддержка):[/b] [url=https://t.me/kaiStudi]https://t.me/kaiStudi[/url]
 [*] [b]Готовый архив со всеми APK и скриптами в Telegram:[/b] [i]Xiaomi_Watch5_Vivo_OriginOS_Pairing_Pack.zip[/i] (97.5 МБ)
 [/list]
 

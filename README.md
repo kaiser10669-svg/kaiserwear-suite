@@ -1,6 +1,7 @@
 # 👑 KaiserWear: Подключение Xiaomi Watch 5 к Vivo X300 Ultra (OriginOS)
 
 [![Author](https://img.shields.io/badge/Author-Kaiser_Dev-FFD700?style=for-the-badge&logo=crown)](https://github.com/kaiser10669-svg)
+[![Telegram](https://img.shields.io/badge/Telegram-@kaiStudi-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/kaiStudi)
 [![Release](https://img.shields.io/badge/Download-Release_v1.0.0_(APK_Pack)-00F0FF?style=for-the-badge&logo=github)](https://github.com/kaiser10669-svg/kaiserwear-suite/releases/latest)
 [![Platform](https://img.shields.io/badge/Phone-Vivo_X300_Ultra_(OriginOS)-00E676?style=for-the-badge&logo=vivo)](https://github.com/kaiser10669-svg)
 [![Watch](https://img.shields.io/badge/Watch-Xiaomi_Watch_5_(Wear_OS)-FF6D00?style=for-the-badge&logo=xiaomi)](https://github.com/kaiser10669-svg)
@@ -172,6 +173,7 @@ flowchart TD
 
 ## 👑 Авторство и благодарности
 * **Автор решения и комплекта:** [Kaiser Dev](https://github.com/kaiser10669-svg)
+* **Официальный Telegram-канал:** [https://t.me/kaiStudi](https://t.me/kaiStudi) — новости, обновления модов и поддержка.
 * **Тестирование и проверка в боевых условиях:** **VerbaMraz** (100% подтверждена стабильная работа на реальном устройстве)
 * Специально для сообщества 4PDA и владельцев связки Vivo X300 Ultra + Xiaomi Watch 5.
 * **Пост на 4PDA:** [`4PDA_POST.txt`](4PDA_POST.txt)
